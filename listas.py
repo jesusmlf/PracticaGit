@@ -19,6 +19,7 @@ def run():
     cantidad_alumnos = int(input("Ingrese la cantidad de alumnos: "))
     lista_alumnos= entrada_usuario(cantidad_alumnos)
     print(promedio(lista_alumnos))
+    
 def suma():
     return 5+9
 
