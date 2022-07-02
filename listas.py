@@ -15,13 +15,27 @@ def entrada_usuario(cantidad_alumnos):
         arr.append(calificacion)
     return arr
 
+def calificacion_alta(arr):
+    max = arr[0]
+    for i in arr:
+        if i > max:
+            max = i
+    return max
+
+def calificacion_baja(arr):
+    min = arr[0]
+    for i in arr:
+        if i < min:
+            min = i
+    return min
+
 def run():
     cantidad_alumnos = int(input("Ingrese la cantidad de alumnos: "))
     lista_alumnos= entrada_usuario(cantidad_alumnos)
-    print(promedio(lista_alumnos))
-    
-def suma():
-    return 5+9
 
+    print(f"\nCalificacion mas alta: {calificacion_alta(lista_alumnos)}")
+    print(f"Calificacion mas baja: {calificacion_baja(lista_alumnos)}")
+    print(f"Promedio alumnos: {promedio(lista_alumnos)}")
+    
 if __name__ == '__main__':
     run()
