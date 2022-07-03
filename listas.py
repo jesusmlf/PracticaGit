@@ -7,6 +7,9 @@ def promedio(lista):
         contador += i
     return contador/len(lista)
 
+def contar(arr):
+    pass
+
 def entrada_usuario(cantidad_alumnos):
     arr = []
     for i in range(0,cantidad_alumnos):
