@@ -39,6 +39,9 @@ def run():
     print(f"\nCalificacion mas alta: {calificacion_alta(lista_alumnos)}")
     print(f"Calificacion mas baja: {calificacion_baja(lista_alumnos)}")
     print(f"Promedio alumnos: {promedio(lista_alumnos)}")
-    
+
+def funcion():
+    pass
+
 if __name__ == '__main__':
     run()
